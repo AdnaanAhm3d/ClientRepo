@@ -32,21 +32,25 @@ const Hero = () => {
             transition={{ duration: 0.35, delay: 0.4, ease: easeIn }}
           >
             With a Masters in Product Design Management at{' '}
-            <a href='#' className='para-links'>
+            <a
+              href='https://en.rubika-edu.com/programs/design/product-design/'
+              target='_blank'
+              className='para-links'
+            >
               Rubika
             </a>
             , I’ve lead various commercialisation projects at{' '}
-            <a href='#' className='para-links'>
+            <Link className='para-links' to='/singleproject'>
               Microsoft
-            </a>
+            </Link>
             ,{' '}
-            <a href='#' className='para-links'>
+            <div href='#' className='para-links'>
               Samsung
-            </a>{' '}
+            </div>{' '}
             and{' '}
-            <a href='#' className='para-links'>
+            <div href='#' className='para-links'>
               Atlassian
-            </a>{' '}
+            </div>{' '}
             that have impacted millions of users globally.
           </motion.p>
           <a href='Trisha Mody_Resume.pdf' download='Trisha Mody_Resume.pdf'>

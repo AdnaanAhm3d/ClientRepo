@@ -129,6 +129,7 @@ function ContactForm() {
               <h3>Get In Touch</h3>
               <div className='info-line'>
                 <span>📨</span>
+
                 <h4>trisha1994@gmail.com</h4>
               </div>
               <div className='info-line'>
@@ -137,15 +138,30 @@ function ContactForm() {
               </div>
               <div className='info-line'>
                 <span>📨</span>
-                <h4>LinkedIn</h4>
+                <a
+                  href='https://www.linkedin.com/in/trisha-mody-1b744abb'
+                  target='_blank'
+                >
+                  <h4>LinkedIn</h4>
+                </a>
               </div>
               <div className='info-line'>
                 <span>📨</span>
-                <h4>Behance</h4>
+                <a
+                  href='https://www.linkedin.com/in/trisha-mody-1b744abb'
+                  target='_blank'
+                >
+                  <h4>Behance</h4>
+                </a>
               </div>
               <div className='info-line'>
                 <span>📨</span>
-                <h4>Instagram</h4>
+                <a
+                  href='https://www.linkedin.com/in/trisha-mody-1b744abb'
+                  target='_blank'
+                >
+                  <h4>Instagram</h4>
+                </a>
               </div>
             </div>
           </div>
