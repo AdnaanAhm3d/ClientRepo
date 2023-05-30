@@ -1,7 +1,10 @@
 :root {
   --FontBold: 'SFProDisplayBold';
   --FontRegular: 'SFProDisplayRegular';
+  --FontSemiBold: 'SFProDisplaySemiBold';
+
   --FontLight: 'SFProDisplayLight';
+  --transition: all 0.2s ease-in;
 }
 
 .contact-center {
@@ -19,6 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 10vh;
+    width: 60vw;
     /* margin: 10vh 5% 0vh 5%; */
     /* width: 70%; */
     /* background: darkcyan; */
@@ -165,9 +169,48 @@
   height: 3.5rem;
   width: 90%;
   margin: auto;
+  transition: var(--transition);
 }
 
+.validator {
+  background: #000000;
+  color: white;
+  cursor: pointer;
+}
 .contact-button svg {
   margin-left: 8px;
   stroke: white;
+}
+
+/* message sent */
+.form-sent-parent {
+  display: grid;
+  /* background: darkgray; */
+  place-items: center;
+  transition: var(--transition);
+}
+
+.form-sent {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+  /* background: lightblue; */
+  /* height: 50%; */
+}
+
+.form-sent svg {
+  /* background: darkgoldenrod; */
+}
+
+.form-message {
+  margin-top: 10px;
+}
+
+.form-message p {
+  font-family: var(--FontSemiBold);
+  margin-top: 10px;
+  font-size: 1.5rem;
+  /* background: darkcyan; */
 }

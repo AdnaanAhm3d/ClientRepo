@@ -5,6 +5,14 @@ import Contact from './Components/Contact'
 import Hero from './Components/Hero'
 import Project from './Components/Project'
 import SinglePage from './Components/SinglePage'
+import { lazy, Suspense } from 'react'
+
+// const Hero = lazy(() => import('./Components/Hero'))
+// const Aboutme = lazy(() => import('./Components/Aboutme'))
+// const Project = lazy(() => import('./Components/Project'))
+// const SinglePage = lazy(() => import('./Components/SinglePage'))
+// const Contact = lazy(() => import('./Components/Contact'))
+
 function App() {
   return (
     <>
@@ -15,6 +23,7 @@ function App() {
         <Route path='/project' element={<Project />} />
         <Route path='/singleproject' element={<SinglePage />} />
       </Routes>
+
       {/* NO ROUTING YET */}
       {/* <Hero /> */}
       {/* <Project /> */}

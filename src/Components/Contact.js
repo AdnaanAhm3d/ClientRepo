@@ -1,67 +1,90 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './Navbar'
 import emailjs from '@emailjs/browser'
 import { useForm } from 'react-hook-form'
-
+import axios from 'axios'
 function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [text, setText] = useState('')
   const [tel, setTel] = useState('')
-
+  const [validator, setValidator] = useState(false)
   const form = useRef()
+  const [sent, setSent] = useState(false)
 
   const { register, handleSubmit } = useForm()
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
-  //   emailjs
-  //     .sendForm(
-  //       'service_x300bhm',
-  //       'template_u7wnho7',
-  //       form.current,
-  //       'l-bnIfW2JsVWzLU1e'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         setName('')
-  //         setEmail('')
-  //         setText('')
-  //         setTel('')
-  //         console.log(result.text)
-  //       },
-  //       (error) => {
-  //         console.log(error.text)
-  //       }
-  //     )
-  // }
+  // useEffect(() => {
+  //   if (!validator) {
+  //     console.log(`no form filled`)
+  //   } else {
+  //     console.log(`form filled`)
+  //   }
+  // }, validator)
+
+  const checkState = () => {
+    if (
+      name.trim() !== '' &&
+      email.trim() !== '' &&
+      text.trim() !== '' &&
+      tel.trim() !== ''
+    ) {
+      // setValidator(true)
+    }
+  }
+
+  checkState()
+
+  const handleChange = () => {
+    if (
+      name.trim() !== '' &&
+      email.trim() !== '' &&
+      text.trim() !== '' &&
+      tel.trim() !== ''
+    ) {
+      setValidator(true)
+    }
+  }
+
+  // useEffect(() => {
+  //   console.log(`hello`)
+  //   console.log(validator)
+  // }, validator)
 
   const [formState, setFormState] = useState({})
   const changeHandler = (event) => {
     setFormState({ ...formState, [event.target.name]: event.target.value })
   }
+
+  const url = 'https://api.trishamody.com/trishamody/contact-us'
+
+  const sendData = (data) => {
+    axios
+      .post(url, data, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      .then((response) => {
+        setSent(true)
+        console.log(`Message sent successfully`)
+        // Handle response
+      })
+      .catch((error) => {
+        console.error(`failure`)
+        // Handle error
+      })
+  }
+
   const submitHandler = (e) => {
     e.preventDefault()
-    const config = {
-      SecureToken: 'e8ff9392-6262-4b54-8d02-4e8a005bf474',
-      Port: '2525',
-      To: 'adnaana06@gmail.com',
-      From: formState.email,
-      Subject: 'Youve recieved a message',
-      Body: `${formState.name} connected to you over email`,
+    const data = {
+      name: name,
+      email: email,
+      contactNumber: tel,
+      message: text,
     }
-    // if (window.Email) {
-    //   window.Email.send(config).then(() => alert('message sent successfully!'))
-    // }
-
-    window.Email.send({
-      SecureToken: 'e8ff9392-6262-4b54-8d02-4e8a005bf474',
-      Port: '2525',
-      To: 'adnaana06@gmail.com',
-      From: formState.email,
-      Subject: 'Youve recieved a message',
-      Body: `${formState.name}`,
-    }).then((message) => alert(message))
+    sendData(data)
   }
 
   return (
@@ -127,85 +150,127 @@ function ContactForm() {
             </div>
           </div>
           <div className='form-section'>
-            <form
-              action='/submit-form'
-              ref={form}
-              className='contact-form'
-              onSubmit={submitHandler}
-            >
-              <div className='contact-column'>
-                <label for='name' className='contact-label'>
-                  Name
-                </label>
-                <input
-                  type='text'
-                  id='name'
-                  {...register('name')}
-                  className='contact-input'
-                  required
-                  // placeholder='Name'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </div>
-              <div className='contact-column'>
-                <label for='email' className='contact-label'>
-                  Email ID
-                </label>
-                <input
-                  type='email'
-                  id='email'
-                  name='user_email'
-                  className='contact-input'
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className='contact-column'>
-                <label for='name' className='contact-label'>
-                  Contact no.
-                </label>
-                <input
-                  type='tel'
-                  id='tel'
-                  name='user_tel'
-                  className='contact-input'
-                  required
-                  value={tel}
-                  onChange={(e) => setTel(e.target.value)}
-                />
-              </div>
-              <div className='contact-column'>
-                <label for='message' className='contact-label'>
-                  Message
-                </label>
-                <input
-                  type='text'
-                  id='message'
-                  name='message'
-                  className='contact-input'
-                  required
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
-                />
-              </div>
-              <button type='submit' value='Send' className='contact-button'>
-                Send message
+            {sent ? (
+              <div className='form-sent'>
                 <svg
-                  width='8'
-                  height='8'
-                  viewBox='0 0 15 15'
+                  width='208'
+                  height='208'
+                  viewBox='0 0 208 208'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'
                 >
+                  <circle
+                    cx='104'
+                    cy='104'
+                    r='103'
+                    stroke='#5BCE00'
+                    stroke-width='2'
+                  />
                   <path
-                    d='M1 13.5L13 1.5M13 1.5H1M13 1.5V13.5'
-                    stroke-width='2.5'
+                    d='M61 105.5L89 133.5L147.5 75'
+                    stroke='#65D10F'
+                    stroke-width='2'
                   />
                 </svg>
-              </button>
-            </form>
+                <div className='form-message'>
+                  <h3>Message delivered!</h3>
+                  <p>
+                    Thanks for reaching out, I’ll get back <br /> to you as soon
+                    as possible!
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <form
+                action='/submit-form'
+                ref={form}
+                className='contact-form'
+                onChange={handleChange}
+                onSubmit={submitHandler}
+              >
+                <div className='contact-column'>
+                  <label for='name' className='contact-label'>
+                    Name
+                  </label>
+                  <input
+                    type='text'
+                    id='name'
+                    {...register('name')}
+                    className='contact-input'
+                    required
+                    // placeholder='Name'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className='contact-column'>
+                  <label for='email' className='contact-label'>
+                    Email ID
+                  </label>
+                  <input
+                    type='email'
+                    id='email'
+                    name='user_email'
+                    className='contact-input'
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className='contact-column'>
+                  <label for='name' className='contact-label'>
+                    Contact no.
+                  </label>
+                  <input
+                    type='tel'
+                    id='tel'
+                    name='user_tel'
+                    className='contact-input'
+                    required
+                    value={tel}
+                    onChange={(e) => setTel(e.target.value)}
+                  />
+                </div>
+                <div className='contact-column'>
+                  <label for='message' className='contact-label'>
+                    Message
+                  </label>
+                  <input
+                    type='text'
+                    id='message'
+                    name='message'
+                    className='contact-input'
+                    required
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
+                  />
+                </div>
+                <button
+                  type='submit'
+                  value='Send'
+                  className={`${
+                    validator ? `contact-button validator` : `contact-button`
+                  }`}
+                >
+                  Send message
+                  <svg
+                    width='8'
+                    height='8'
+                    viewBox='0 0 15 15'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                    className={`${
+                      validator ? 'validator-svg' : 'contact-button-svg'
+                    }`}
+                  >
+                    <path
+                      d='M1 13.5L13 1.5M13 1.5H1M13 1.5V13.5'
+                      stroke-width='2.5'
+                    />
+                  </svg>
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </div>
