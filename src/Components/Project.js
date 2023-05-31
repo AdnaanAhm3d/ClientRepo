@@ -7,14 +7,14 @@ import { useContext, useState, useEffect } from 'react'
 
 import { DefaultContext } from '../Contexts/DefaultContext'
 
-import image1 from '../Assets/Images/image-1.png'
-import image2 from '../Assets/Images/image-2.png'
-import image3 from '../Assets/Images/image-3.png'
-import image4 from '../Assets/Images/image-4.png'
-import image5 from '../Assets/Images/image-5.png'
-import image6 from '../Assets/Images/image-6.png'
-import image7 from '../Assets/Images/image-7.png'
-import image8 from '../Assets/Images/image-8.png'
+import image1 from '../Assets/Images/image-1.webp'
+import image2 from '../Assets/Images/image-2.webp'
+import image3 from '../Assets/Images/image-3.webp'
+import image4 from '../Assets/Images/image-4.webp'
+import image5 from '../Assets/Images/image-5.webp'
+import image6 from '../Assets/Images/image-6.webp'
+import image7 from '../Assets/Images/image-7.webp'
+import image8 from '../Assets/Images/image-8.webp'
 
 const Project = () => {
   const { toggleNav, setToggleNav } = useContext(DefaultContext)

@@ -1,6 +1,6 @@
 import React from 'react'
 // import resume from '../Assets/Resume/Trisha Mody_Resume.pdf'
-import image1 from '../Assets/Images/image-1.png'
+import image1 from '../Assets/Images/image-1.webp'
 import { Link } from 'react-router-dom'
 import { delay, easeIn, motion } from 'framer-motion'
 
