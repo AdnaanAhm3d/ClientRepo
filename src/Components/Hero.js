@@ -1,6 +1,11 @@
 import React from 'react'
 // import resume from '../Assets/Resume/Trisha Mody_Resume.pdf'
 import image1 from '../Assets/Images/image-1.webp'
+import image2 from '../Assets/Images/image-2.webp'
+import image3 from '../Assets/Images/image-3.webp'
+import image4 from '../Assets/Images/image-4.webp'
+import image5 from '../Assets/Images/image-5.webp'
+import image6 from '../Assets/Images/image-6.webp'
 import { Link } from 'react-router-dom'
 import { delay, easeIn, motion } from 'framer-motion'
 
@@ -102,19 +107,19 @@ const Hero = () => {
                 <img src={image1} alt='project image' />
               </Link>
               <Link to='/project'>
-                <img src={image1} alt='project image' />
+                <img src={image2} alt='project image' />
               </Link>
               <Link to='/project'>
-                <img src={image1} alt='project image' />
+                <img src={image3} alt='project image' />
               </Link>
               <Link to='/project'>
-                <img src={image1} alt='project image' />
+                <img src={image4} alt='project image' />
               </Link>
               <Link to='/project'>
-                <img src={image1} alt='project image' />
+                <img src={image5} alt='project image' />
               </Link>
               <Link to='/project'>
-                <img src={image1} alt='project image' />
+                <img src={image6} alt='project image' />
               </Link>
             </div>
           </div>
