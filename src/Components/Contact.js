@@ -14,14 +14,6 @@ function ContactForm() {
 
   const { register, handleSubmit } = useForm()
 
-  // useEffect(() => {
-  //   if (!validator) {
-  //     console.log(`no form filled`)
-  //   } else {
-  //     console.log(`form filled`)
-  //   }
-  // }, validator)
-
   const checkState = () => {
     if (
       name.trim() !== '' &&
@@ -45,11 +37,6 @@ function ContactForm() {
       setValidator(true)
     }
   }
-
-  // useEffect(() => {
-  //   console.log(`hello`)
-  //   console.log(validator)
-  // }, validator)
 
   const [formState, setFormState] = useState({})
   const changeHandler = (event) => {
@@ -90,23 +77,7 @@ function ContactForm() {
   return (
     <>
       <Navbar />
-      {/* <div>
-        <form onSubmit={submitHandler}>
-          <input
-            type='text'
-            name='name'
-            value={formState.name || ''}
-            onChange={changeHandler}
-          />
-          <input
-            type='email'
-            name='email'
-            value={formState.email || ''}
-            onChange={changeHandler}
-          />
-          <input type='submit' value='send message' />
-        </form>
-      </div> */}
+
       <div className='contact-center'>
         <div className='contact-section'>
           <div className='contactinfo-section'>
