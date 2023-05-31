@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './Navbar'
-import emailjs from '@emailjs/browser'
+
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 function ContactForm() {
