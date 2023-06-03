@@ -39,9 +39,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -68,9 +69,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -97,9 +99,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -126,9 +129,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -155,9 +159,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -184,9 +189,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -213,9 +219,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -242,9 +249,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>
@@ -271,9 +279,10 @@ const Project = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      d='M2 18L18 2M18 2H2M18 2V18'
-                      stroke='white'
-                      stroke-width='4'
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.00015 0H20.0002V18H16.0002V6.82843L3.41436 19.4142L0.585938 16.5858L13.1717 4H2.00015V0Z'
+                      fill='white'
                     />
                   </svg>
                 </div>

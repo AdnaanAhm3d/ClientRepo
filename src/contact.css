@@ -91,6 +91,20 @@
   /* line-height: 100%; */
 }
 
+.info-line span {
+}
+.contact-icons {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: red; */
+  height: 100%;
+  margin-left: 5px;
+  /* width: 20px; */
+  /* height: 20px; */
+  /* line-height: 1; */
+}
+
 .info-line h4 {
   /* background: darkkhaki; */
 }
