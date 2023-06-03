@@ -36,7 +36,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.35, delay: 0.4, ease: easeIn }}
           >
-            With a Masters in Product Design Management at{' '}
+            With a Masters in Product Design Management from{' '}
             <a
               href='https://en.rubika-edu.com/programs/design/product-design/'
               target='_blank'
@@ -45,17 +45,14 @@ const Hero = () => {
               Rubika
             </a>
             , I’ve lead various commercialisation projects at{' '}
-            <Link className='para-links' to='/singleproject'>
-              Microsoft
-            </Link>
-            ,{' '}
+            <div className='para-links'>Atlassian</div>,{' '}
             <div href='#' className='para-links'>
               Samsung
             </div>{' '}
             and{' '}
-            <div href='#' className='para-links'>
-              Atlassian
-            </div>{' '}
+            <Link to='/singleproject' className='para-links'>
+              Microsoft
+            </Link>{' '}
             that have impacted millions of users globally.
           </motion.p>
           <a href='Trisha Mody_Resume.pdf' download='Trisha Mody_Resume.pdf'>
@@ -63,14 +60,17 @@ const Hero = () => {
               Download Resume{' '}
               <svg
                 width='14'
-                height='13'
-                viewBox='0 0 14 13'
+                height='14'
+                viewBox='0 0 14 14'
+                fill='none'
                 xmlns='http://www.w3.org/2000/svg'
                 className='hero-btn-svg'
               >
                 <path
-                  d='M7.08582 0.135458V11.4492M7.08582 11.4492L12.7427 5.79231M7.08582 11.4492L1.42897 5.79231'
-                  stroke-width='2'
+                  fill-rule='evenodd'
+                  clip-rule='evenodd'
+                  d='M6.00001 9.74263V0.84314H8.00001V9.74263L11.9498 5.79289L13.364 7.2071L7.00001 13.5711L0.636047 7.2071L2.05026 5.79289L6.00001 9.74263Z'
+                  // fill='black'
                 />
               </svg>
             </button>
@@ -93,11 +93,13 @@ const Hero = () => {
                 xmlns='http://www.w3.org/2000/svg'
               >
                 <path
-                  d='M1 13.5L13 1.5M13 1.5H1M13 1.5V13.5'
-                  stroke='black'
-                  stroke-width='2.5'
+                  fill-rule='evenodd'
+                  clip-rule='evenodd'
+                  d='M0.999972 0.75H14.25V14H11.75V5.01777L1.88386 14.8839L0.116089 13.1161L9.98221 3.25H0.999972V0.75Z'
+                  fill='black'
                 />
               </svg>
+
               <Link to='/project'>
                 <h3>Projects</h3>
               </Link>
@@ -135,9 +137,10 @@ const Hero = () => {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    d='M1 13.5L13 1.5M13 1.5H1M13 1.5V13.5'
-                    stroke='black'
-                    stroke-width='2.5'
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M0.999972 0.75H14.25V14H11.75V5.01777L1.88386 14.8839L0.116089 13.1161L9.98221 3.25H0.999972V0.75Z'
+                    fill='black'
                   />
                 </svg>
               </Link>
@@ -158,9 +161,10 @@ const Hero = () => {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    d='M1 13.5L13 1.5M13 1.5H1M13 1.5V13.5'
-                    stroke='black'
-                    stroke-width='2.5'
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M0.999972 0.75H14.25V14H11.75V5.01777L1.88386 14.8839L0.116089 13.1161L9.98221 3.25H0.999972V0.75Z'
+                    fill='black'
                   />
                 </svg>
               </Link>
@@ -174,14 +178,17 @@ const Hero = () => {
               Download Resume{' '}
               <svg
                 width='14'
-                height='13'
-                viewBox='0 0 14 13'
+                height='14'
+                viewBox='0 0 14 14'
+                fill='none'
                 xmlns='http://www.w3.org/2000/svg'
                 className='hero-btn-svg'
               >
                 <path
-                  d='M7.08582 0.135458V11.4492M7.08582 11.4492L12.7427 5.79231M7.08582 11.4492L1.42897 5.79231'
-                  stroke-width='2'
+                  fill-rule='evenodd'
+                  clip-rule='evenodd'
+                  d='M6.00001 9.74263V0.84314H8.00001V9.74263L11.9498 5.79289L13.364 7.2071L7.00001 13.5711L0.636047 7.2071L2.05026 5.79289L6.00001 9.74263Z'
+                  fill='white'
                 />
               </svg>
             </button>

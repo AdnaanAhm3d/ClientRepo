@@ -112,7 +112,7 @@ body {
 }
 
 .hero-btn-mobile svg {
-  stroke: white;
+  /* stroke: white; */
 }
 
 @keyframes HeroBtn {
@@ -138,12 +138,14 @@ body {
 }
 
 .hero-btn:hover .hero-btn-svg {
-  stroke: white;
+  /* stroke: white; */
+  fill: white;
 }
 
 .hero-btn-svg {
   transition: var(--transition);
-  stroke: black;
+  /* stroke: black; */
+  fill: black;
   margin-left: 24px;
 }
 

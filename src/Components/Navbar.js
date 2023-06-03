@@ -154,15 +154,16 @@ const Navbar = () => {
                 Download Resume
                 <svg
                   width='14'
-                  height='13'
-                  viewBox='0 0 14 13'
+                  height='14'
+                  viewBox='0 0 14 14'
+                  fill='none'
                   xmlns='http://www.w3.org/2000/svg'
-                  className='nav-btn-svg'
                 >
                   <path
-                    d='M7.08582 0.135458V11.4492M7.08582 11.4492L12.7427 5.79231M7.08582 11.4492L1.42897 5.79231'
-                    stroke-width='2'
-                    stroke='white'
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M6.00001 9.74263V0.84314H8.00001V9.74263L11.9498 5.79289L13.364 7.2071L7.00001 13.5711L0.636047 7.2071L2.05026 5.79289L6.00001 9.74263Z'
+                    fill='white'
                   />
                 </svg>
               </button>

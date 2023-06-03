@@ -557,7 +557,8 @@ const SinglePage = () => {
           </div>
           <div className='team'>
             <h3>Team</h3>
-            <h5>Varun Taneja</h5>
+            <h5>Varun Taneja (Project Manager)</h5>
+            <h5>Vaibhav Malik (Engineering Manager)</h5>
             <h5>Nikita (Developer)</h5>
           </div>
 

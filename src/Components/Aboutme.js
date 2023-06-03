@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-
+import { Link } from 'react-router-dom'
 const Aboutme = () => {
   return (
     <div>
@@ -33,9 +33,9 @@ const Aboutme = () => {
           </p>
           <p>
             UI/UX caught my attention soon after my first placement at{' '}
-            <a href='#' className='para-links'>
+            <div href='#' className='para-links'>
               Samsung&nbsp;
-            </a>
+            </div>
             as an industrial designer. Seeing the rapid turn-around time, and
             scale for impact got me hooked.
           </p>
@@ -50,18 +50,18 @@ const Aboutme = () => {
             Seeing my design reach millions of users overnight and the
             opportunity for impact never seizes to amaze me. Since Samsung, I
             have lead multiple commercialisation projects at{' '}
-            <a href='#' className='para-links'>
+            <Link to='/singleproject' href='#' className='para-links'>
               Microsoft&nbsp;
-            </a>
+            </Link>
             where I designed end-to-end solutions for B2B (enterprise) use cases
             for admins along with B2C products for their consumers.
           </p>
           <p>
             Over time, I’ve realised that I gravitate towards the more technical
             side of things, so, I’ve pursued an opportunity at{' '}
-            <a href='#' className='para-links'>
+            <div href='#' className='para-links'>
               Atlassian&nbsp;
-            </a>
+            </div>
             and am constantly trying to step outside my comfort zone to expand
             my horizons.
           </p>
