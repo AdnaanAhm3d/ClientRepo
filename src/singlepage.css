@@ -462,6 +462,10 @@ body {
   margin-bottom: 12px;
 }
 
+li {
+  padding-bottom: 10px;
+}
+
 .challenges li {
   font-family: var(--FontTextRegular);
   font-size: 1.5rem;
@@ -483,6 +487,10 @@ body {
   width: 90%;
   margin: auto;
   color: var(--greytext);
+  /* background-color: red; */
+  /* text-indent: 20px; */
+  list-style-type: disc;
+  /* list-style-position: first; */
 }
 
 .team {

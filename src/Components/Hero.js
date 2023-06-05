@@ -20,7 +20,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.35, ease: easeIn }}
           >
-            Hey there!👋🏻
+            Hey there!&nbsp;👋🏻
           </motion.h1>
           <motion.h2
             className='hero-intro'

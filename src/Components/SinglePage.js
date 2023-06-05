@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 // images
 import image1 from '../Assets/Images/image-1.webp'
 import image3 from '../Assets/Images/image-3.webp'
-import jtbd from '../Assets/Images/JTBD.png'
+import jtbd from '../Assets/Images/JTBD_high res_new.webp'
 import streamadmincenter from '../Assets/Images/project-1/compressed-images/Stream admin center.webp'
 import spac from '../Assets/Images/project-1/compressed-images/SP AC.webp'
 import streamtilesettings from '../Assets/Images/project-1/compressed-images/Stream tile settings.webp'
@@ -13,6 +13,9 @@ import m365 from '../Assets/Images/project-1/compressed-images/M365 Stream Tile.
 import restrictvideouploadonstream from '../Assets/Images/project-1/compressed-images/Restrict video upload on Stream.webp'
 import messageadminsettings from '../Assets/Images/project-1/compressed-images/Message admin settings.webp'
 import enduserimage from '../Assets/Images/project-1/compressed-images/End user message.webp'
+import mobilemessage from '../Assets/Images/mobile message.webp'
+import mobileappswitcher from '../Assets/Images/Mobile app switcher.webp'
+import heroimg from '../Assets/Images/Hero image.png'
 // videos
 
 import migratingcontainers from '../Assets/Videos/Migrating containers.mov'
@@ -66,7 +69,7 @@ const SinglePage = () => {
       <Navbar />
 
       <div className='project-div'>
-        <img src={image1} alt='header' className='img-1' />
+        <img src={heroimg} alt='header' className='img-1' />
         <div className='project-center'>
           <h1 className='project-header'>
             Microsoft Stream Migration: <br /> Admin Experience
@@ -439,6 +442,16 @@ const SinglePage = () => {
               alt=''
               className='img-project  post-migration-img'
             />
+            <img
+              src={mobilemessage}
+              alt=''
+              className='img-project  post-migration-img'
+            />
+            <img
+              src={mobileappswitcher}
+              alt=''
+              className='img-project  post-migration-img'
+            />
           </div>
 
           <div className='north-star'>
@@ -511,49 +524,54 @@ const SinglePage = () => {
           </div>
           <div className='challenges'>
             <h3>Challenges</h3>
-            <li>Complexity of the project was overwhelming</li>
-            <li>
-              Working with a tight timelines and technical constraints limited
-              creativity
-            </li>
-            <li>
-              Prioritising execution since the project was already in progress
-              and was handed over to me from another designer
-            </li>
-            <li>
-              Building context while simultaneously delivering deliverables
-            </li>
-            <li>
-              Enrolling stakeholders in my understanding that admins also
-              deserved intuitive user experiences that simplified and enhanced
-              their processes to complete tasks with efficiency and accuracy
-            </li>
-            <li>
-              Working iteratively to deliver on timelines and not fixating on
-              pixel perfection
-            </li>
+            <ul>
+              <li>Complexity of the project was overwhelming</li>
+              <li>
+                Working with a tight timelines and technical constraints limited
+                creativity
+              </li>
+              <li>
+                Prioritising execution since the project was already in progress
+                and was handed over to me from another designer
+              </li>
+              <li>
+                Building context while simultaneously delivering deliverables
+              </li>
+              <li>
+                Enrolling stakeholders in my understanding that admins also
+                deserved intuitive user experiences that simplified and enhanced
+                their processes to complete tasks with efficiency and accuracy
+              </li>
+              <li>
+                Working iteratively to deliver on timelines and not fixating on
+                pixel perfection
+              </li>
+            </ul>
           </div>
           <div className='learning'>
             <h3>Learning</h3>
-            <li>
-              Building a rapport with my triad (PM’s, devs, engineers) and
-              understanding their constraints, and point of view empowered all
-              of us to find common ground, this took a while but once we were
-              more empathetic towards each other and trusted each others areas
-              of expertise working together was seamless, efficient and fun
-            </li>
-            <li>
-              Learning to work with cross-functional teams and working with
-              dependencies
-            </li>
-            <li>
-              Finding the best way to work remotely with teams across
-              geographies
-            </li>
-            <li>
-              Making the right trade-offs at the right time, and sticking my
-              ground with respect to important requirements as a the design lead
-            </li>
+            <ul>
+              <li>
+                Building a rapport with my triad (PM’s, devs, engineers) and
+                understanding their constraints, and point of view empowered all
+                of us to find common ground, this took a while but once we were
+                more empathetic towards each other and trusted each others areas
+                of expertise working together was seamless, efficient and fun
+              </li>
+              <li>
+                Learning to work with cross-functional teams and working with
+                dependencies
+              </li>
+              <li>
+                Finding the best way to work remotely with teams across
+                geographies
+              </li>
+              <li>
+                Making the right trade-offs at the right time, and sticking my
+                ground with respect to important requirements as a the design
+                lead
+              </li>
+            </ul>
           </div>
           <div className='team'>
             <h3>Team</h3>
